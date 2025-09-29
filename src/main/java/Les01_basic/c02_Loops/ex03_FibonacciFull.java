@@ -2,7 +2,7 @@ package Les01_basic.c02_Loops;
 
 import java.util.Scanner;
 
-public class ex03_fibonacci {
+public class ex03_FibonacciFull {
     public static void main(String[] args) {
         System.out.println("пОСТРОИМ РЯД ФИБОНАЧЧИ");
         Scanner in = new Scanner(System.in);
