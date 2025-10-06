@@ -42,7 +42,7 @@ public class t000_CodeStyleComment {
         // 1-2-3-4 слова, первое с маленькой буквы, далее с Большой
         // СТРОГО латинскими буквами, лучше английскими словами
 
-        String user_address; int v; // плохо
+        String usr_addr; int v; // плохо
         
         String userAddress; //хорошо
         int cityLimitSpeed = 60; // ограничение скорости в городе
@@ -56,7 +56,8 @@ public class t000_CodeStyleComment {
         // соответственно расставлять скобки
 
         int carSpeed = 90;
-        if (carSpeed > cityLimitSpeed) { // плохо: { надо оставить на предыдущей строке
+        if (carSpeed > cityLimitSpeed)
+        { // плохо: { надо оставить на предыдущей строке
             System.out.println("Превышение скорости!");
         }
 
