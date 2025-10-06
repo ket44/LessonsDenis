@@ -78,18 +78,20 @@ public class For27_demo {
              currentAddentum++) {
             // тело цикла
 
-            out.printf("Nслаг: %d кфц_числ: %d  послед.кфц_знам: %d*%d степн: %d%n",
+            out.printf("Nслаг: %-2d аргум: %.25f  кфц_числ: %d  послед.кфц_знам: %d*%d степн: %d%n",
                     currentAddentum,
+                    result,
                     koef_chisl,
                     koef_znam,
                     koef_znam+1,
                     step_arg);
             // считаем сумму = добавляем в нее величину расчета СЛАГАЕМОГО
 
-            result += koef_chisl * x  / koef_znam;
             koef_chisl += 2;
             koef_znam += 2;
             step_arg = 2 * currentAddentum + 1;
+            result = Math.pow(x,step_arg);
+
         }
     }
 }
