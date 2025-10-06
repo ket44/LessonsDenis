@@ -10,7 +10,7 @@ public class For33_fibonacci_with_errors {
         int fn = 0;
 
         System.out.println("Введите номер числа Фибоначчи");
-        Scanner input = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
         int N = in.nextInt();
 
