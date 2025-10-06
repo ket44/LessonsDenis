@@ -1,6 +1,5 @@
-package Les01_basic;
+package Les01_basic.c00_inOut;
 
-import java.io.PrintWriter;
 import java.util.Scanner;
 
 /**
@@ -10,7 +9,6 @@ import java.util.Scanner;
 public class t001_InOut {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        PrintWriter out = new PrintWriter(System.out);
 
         int a = in.nextInt();
         double b = in.nextDouble();
@@ -19,7 +17,7 @@ public class t001_InOut {
         double sum = x + y;
 
         System.out.println(sum);
-        System.out.printf("Число, округленное до 0 знаков: %.4f \n", sum);
+        System.out.printf("Число, округленное до 0 знаков: %.4f %n", sum);
         System.out.println(sum);
 
     }
