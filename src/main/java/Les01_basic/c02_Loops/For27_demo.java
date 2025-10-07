@@ -67,30 +67,42 @@ public class For27_demo {
         // Этап 4. Спрашиваем x и реализуем формулу
         int koef_chisl = 1; // коэффициент в числителе
         int koef_znam = 2; // коэффициент в знаменателе
-        int step_arg = 1; // степень аргумента
+
         out.println("Введите x");
         double x = in.nextDouble();
+        double step_arg = x; // степень аргумента
         double result = x;
 
 
+//        for (int currentAddentum = 1; // используем перенос для краткости строки кода - легче читать,
+//             currentAddentum <= N_slag; //  легче контролировать изменения в коде
+//             currentAddentum++) {
+//            // тело цикла
+//
+//            out.printf("Nслаг: %-2d аргум: %.25f  кфц_числ: %d  послед.кфц_знам: %d*%d степн: %d%n",
+//                    currentAddentum,
+//                    result,
+//                    koef_chisl,
+//                    koef_znam,
+//                    koef_znam+1,
+//                    step_arg);
+//            // считаем сумму = добавляем в нее величину расчета СЛАГАЕМОГО
+//
+//            koef_chisl += 2;
+//            koef_znam += 2;
+//            step_arg = 2 * currentAddentum + 1;
+//            result = Math.pow(x,step_arg);
+//
+//        }
+
         for (int currentAddentum = 1; // используем перенос для краткости строки кода - легче читать,
              currentAddentum <= N_slag; //  легче контролировать изменения в коде
-             currentAddentum++) {
+             ++currentAddentum) {
             // тело цикла
-
-            out.printf("Nслаг: %-2d аргум: %.25f  кфц_числ: %d  послед.кфц_знам: %d*%d степн: %d%n",
-                    currentAddentum,
-                    result,
-                    koef_chisl,
-                    koef_znam,
-                    koef_znam+1,
-                    step_arg);
-            // считаем сумму = добавляем в нее величину расчета СЛАГАЕМОГО
-
-            koef_chisl += 2;
-            koef_znam += 2;
-            step_arg = 2 * currentAddentum + 1;
-            result = Math.pow(x,step_arg);
+            koef_chisl *= 2*currentAddentum - 1;
+            koef_znam *= 2*currentAddentum;
+            step_arg *= x * x;
+            result += koef_chisl * step_arg/(koef_znam * (2 * currentAddentum + 1));
 
         }
     }
