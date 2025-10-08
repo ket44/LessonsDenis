@@ -65,13 +65,51 @@ public class For27_demo {
 //        }
 
         // Этап 4. Спрашиваем x и реализуем формулу
+//        int koef_chisl = 1; // коэффициент в числителе
+//        int koef_znam = 2; // коэффициент в знаменателе
+//        int step_arg = 1; // степень аргумента
+//        out.println("Введите x");
+//        double x = in.nextDouble();
+//        double result = x;
+//
+//
+//        for (int currentAddentum = 1; // используем перенос для краткости строки кода - легче читать,
+//             currentAddentum <= N_slag; //  легче контролировать изменения в коде
+//             currentAddentum++) {
+//            // тело цикла
+//
+//            out.printf("Nслаг: %-2d x_в_степен: %.25f  кфц_числ: %d  послед.кфц_знам: %d*%d степн: %d%n",
+//                    currentAddentum, // текущее слагаемое
+//                    result,
+//                    koef_chisl,
+//                    koef_znam,
+//                    koef_znam+1,
+//                    step_arg);
+//            // считаем сумму = добавляем в нее величину расчета СЛАГАЕМОГО
+//
+//            koef_chisl += 2;
+//            koef_znam += 2;
+//            step_arg = 2 * currentAddentum + 1;
+//            result = Math.pow(x,step_arg);
+
+        //
+// Этап 5. из компонентов собираем формулу
         int koef_chisl = 1; // коэффициент в числителе
+<<<<<<< Updated upstream
         int koef_znam = 2; // коэффициент в знаменателе
 
         out.println("Введите x");
         double x = in.nextDouble();
         double step_arg = x; // степень аргумента
         double result = x;
+=======
+        int koef_znam = 1; // коэффициент в знаменателе
+        int step_arg = 1; // степень аргумента
+        out.println("Введите x");
+        double x = in.nextDouble();
+        double result = Math.pow(x,step_arg);
+        double sum = x;
+>>>>>>> Stashed changes
 
 
 //        for (int currentAddentum = 1; // используем перенос для краткости строки кода - легче читать,
@@ -99,11 +137,30 @@ public class For27_demo {
              currentAddentum <= N_slag; //  легче контролировать изменения в коде
              ++currentAddentum) {
             // тело цикла
+<<<<<<< Updated upstream
             koef_chisl *= 2*currentAddentum - 1;
             koef_znam *= 2*currentAddentum;
             step_arg *= x * x;
             result += koef_chisl * step_arg/(koef_znam * (2 * currentAddentum + 1));
+=======
 
-        }
+            out.printf("Nслаг: %-2d x_в_степен: %.25f  кфц_числ: %d  кфц_знам: %d степн: %d   sum: %.6f %n"  ,
+                    currentAddentum, // текущее слагаемое
+                    result,
+                    koef_chisl,
+                    koef_znam,
+                    step_arg,
+                    sum);
+
+            koef_chisl *= 2 * currentAddentum - 1;
+            koef_znam *= 2 * currentAddentum * (currentAddentum + 1);
+            step_arg = 2 * currentAddentum + 1;
+            result = Math.pow(x,step_arg);
+            // считаем сумму = добавляем в нее величину расчета СЛАГАЕМОГО
+            sum += (koef_chisl * result) / koef_znam;
+            }
+>>>>>>> Stashed changes
+
+        out.printf("arcsin(x) = %.8f", sum);
     }
 }

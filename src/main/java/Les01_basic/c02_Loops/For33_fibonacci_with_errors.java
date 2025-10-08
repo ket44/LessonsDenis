@@ -20,8 +20,6 @@ public class For33_fibonacci_with_errors {
         System.out.printf("%d-ое число Фибо = %d\n",  2, f1 );
         for (int i = 3; i <= N; i++) {
             fn = f1 + f2;
-
-
             System.out.printf("%d-ое число Фибо = %d\n",  i, fn );
         }
 
