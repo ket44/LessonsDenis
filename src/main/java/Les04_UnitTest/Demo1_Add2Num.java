@@ -8,6 +8,6 @@ public class Demo1_Add2Num {
      * @return сумма
      */
     public static int getSum2Number(int a, int b){
-        return 0;
+        return a + b;
     }
 }
