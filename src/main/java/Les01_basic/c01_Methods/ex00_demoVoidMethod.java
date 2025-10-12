@@ -1,8 +1,8 @@
 package Les01_basic.c01_Methods;
 
-public class example1 {
+public class ex00_demoVoidMethod {
     static void SayHello(){
-        System.out.println("Привет 2-1");
+        System.out.println("Привет, студенты!");
     }
 
     public static void main(String[] args) {
