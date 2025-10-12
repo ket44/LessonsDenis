@@ -3,7 +3,7 @@ package Les01_basic.c001_IfSwitch;
 public class ex01_LoginPassword {
     public static void main(String[] args) {
         // Реализуем систему проверки строковых данных
-        String correctUsername = "uSEr";
+        String correctUsername = "uSEr1";
         String correctPassword = "12345";
 
         String inputUsername = "User";
