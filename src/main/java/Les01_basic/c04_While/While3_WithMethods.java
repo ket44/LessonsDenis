@@ -1,4 +1,4 @@
-package Les01_basic.c03_While;
+package Les01_basic.c04_While;
 
 import java.util.Scanner;
 

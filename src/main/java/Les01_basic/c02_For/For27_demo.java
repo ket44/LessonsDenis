@@ -1,4 +1,4 @@
-package Les01_basic.c02_Loops;
+package Les01_basic.c02_For;
 
 import java.util.Scanner;
 

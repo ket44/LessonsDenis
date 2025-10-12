@@ -1,7 +1,6 @@
-package Les01_basic.c02_Loops;
+package Les01_basic.c04_While;
 
 
-import java.security.spec.RSAOtherPrimeInfo;
 import java.util.Random;
 import java.util.Scanner;
 
