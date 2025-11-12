@@ -2,9 +2,13 @@ package acmp_dn;
 
 import java.io.PrintWriter;
 import java.util.Scanner;
-
-public class task685_GoldPies {
-
+// Задача про воровство золотого песка.
+// Цель: получить максимальную выгоду
+public class task685_GoldSand {
+/*
+Ход решения:
+Самый дорогой песок - в самую большую сумку, далее по аналогии.
+ */
     public static int getMax(int a, int b, int c) {
         int max = 0;
         if (a > b) {
