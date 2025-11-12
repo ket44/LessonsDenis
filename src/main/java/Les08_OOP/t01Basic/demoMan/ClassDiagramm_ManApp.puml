@@ -1,0 +1,6 @@
+@startuml
+class Les08_OOP.t01Basic.demoMan.MainApp {
++ {static} void main(String[])
+}
+
+@enduml

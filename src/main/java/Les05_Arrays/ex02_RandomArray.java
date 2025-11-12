@@ -12,7 +12,9 @@ public class ex02_RandomArray {
         Random rnd = new Random();
         //вызвать метод генерации (целого), указав диапазон
         int RandomInt = rnd.nextInt(0, 100);
-        // System.out.println(RandomInt);
+
+
+        //System.out.println(RandomInt);
         for (int i = 0; i < N; i++){
             RandomNums[i] = rnd.nextInt(0, 100);
         }

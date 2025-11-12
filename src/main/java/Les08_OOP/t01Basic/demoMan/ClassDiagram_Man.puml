@@ -1,0 +1,15 @@
+@startuml
+class Man {
+- Random rnd
+- String Name
+- int Age
+- int Health
+- boolean isLife
++ void Talk() //Говорить
++ void Go()
++ void Kill()
++ boolean IsAlive()
+}
+
+
+@enduml
