@@ -1,9 +1,8 @@
-package Les08_OOP.MethodRemeber;
+package Les06_OOP.MethodRemember;
 
 import java.time.LocalDate;
-import java.util.Date;
 
-public class lr2_1_method {
+public class lr2_1_methods {
     /*
     Напишите методы, затем вызовите  их в основной программе
 

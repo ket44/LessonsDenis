@@ -1,4 +1,4 @@
-package Les06_OOP.Man;
+package Les06_OOP.ManDemo;
 
 import java.util.Random;
 

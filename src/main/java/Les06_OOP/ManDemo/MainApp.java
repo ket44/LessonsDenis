@@ -1,4 +1,4 @@
-package Les06_OOP.Man;
+package Les06_OOP.ManDemo;
 
 public class MainApp {
     public static void main(String[] args) {

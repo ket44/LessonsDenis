@@ -1,4 +1,4 @@
-package Les08_OOP.t01Basic.demoMan;
+package Les06_OOP.ManFull;
 
 import java.util.Random;
 
