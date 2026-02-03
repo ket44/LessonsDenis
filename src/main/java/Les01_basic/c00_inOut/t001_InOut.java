@@ -1,5 +1,7 @@
 package Les01_basic.c00_inOut;
 
+import PraktOOP.Glava3.gr21_1.Company;
+
 import java.util.Scanner;
 
 /**
@@ -15,6 +17,7 @@ public class t001_InOut {
         double x = 0.1;
         double y = 4.60125;
         double sum = x + y;
+
 
         System.out.println(sum);
         System.out.printf("Число, округленное до 0 знаков: %.4f %n", sum);

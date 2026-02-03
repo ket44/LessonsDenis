@@ -1,6 +1,0 @@
-@startuml
-class MainApp {
-+ {static} void main(String[])
-}
-
-@enduml
