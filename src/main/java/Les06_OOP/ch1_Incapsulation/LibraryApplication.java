@@ -1,4 +1,4 @@
-package Les06_OOP.Incapsulation;
+package Les06_OOP.ch1_Incapsulation;
 
 public class LibraryApplication {
     public static void main(String[] args){
