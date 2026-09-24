@@ -1,6 +1,4 @@
 package Les01_basic.c04_While;
-
-
 import java.util.Random;
 import java.util.Scanner;
 

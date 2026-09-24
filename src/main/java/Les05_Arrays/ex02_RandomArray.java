@@ -15,12 +15,27 @@ public class ex02_RandomArray {
 
 
         //System.out.println(RandomInt);
-        for (int i = 0; i < N; i++){
+        for (int i = 0; i < N; i++) {
             RandomNums[i] = rnd.nextInt(0, 100);
         }
 
         for (int element : RandomNums) {
             System.out.print(element + " ");
         }
+
+        for (int i = 0; i < RandomNums.length - 1; i++) {
+            for (int j = 0; j < RandomNums.length - i -1; j++) {
+                if (RandomNums[j] > RandomNums[j + 1]) {
+                    int temp = RandomNums[j];
+                    RandomNums[j] = RandomNums[j + 1];
+                    RandomNums[j + 1] = temp;
+                }
+            }
+        }
+        System.out.println();
+        for (int element : RandomNums) {
+            System.out.print(element + " ");
+        }
+
     }
 }

@@ -25,7 +25,7 @@ public class ex01_DemoWhile {
         // пример цикла с условием (Ностальгия по фильму "Чужие"):
 
         out.println("У вас  есть 5 секунд, чтобы удалится на безопасное расстояние!");
-        int count = 5;
+        int count = 8;
         out.print("Таймер = ");
 
         while (count > 0){
@@ -34,10 +34,12 @@ public class ex01_DemoWhile {
             Thread.sleep(1000);
         }
         out.println();
-
-        String explosion = new StringBuilder().append('\uD83D').append('\uDCA5').toString();
+        int i = 5;
+        String explosion = "\uD83D" + '\uDCA5';
         while (true){
             System.out.print(explosion + " ");
+            i++;
+            if (i == 10) break;
         }
 
     }

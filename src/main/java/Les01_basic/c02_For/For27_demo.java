@@ -94,9 +94,9 @@ public class For27_demo {
 
         //
 // Этап 5. из компонентов собираем формулу
-        int koef_chisl = 1; // коэффициент в числителе
-        int koef_znam = 1; // коэффициент в знаменателе
-        int step_arg = 1; // степень аргумента
+        long koef_chisl = 1; // коэффициент в числителе
+        long koef_znam = 1; // коэффициент в знаменателе
+        long step_arg = 1; // степень аргумента
         out.println("Введите x");
         double x = in.nextDouble();
         double result = Math.pow(x,step_arg);
@@ -143,7 +143,7 @@ public class For27_demo {
                     sum);
 
             koef_chisl *= 2 * currentAddentum - 1;
-            koef_znam *= 2 * currentAddentum * (currentAddentum + 1);
+            koef_znam *= 2 * currentAddentum; // * (currentAddentum + 1);
             step_arg = 2 * currentAddentum + 1;
             result = Math.pow(x,step_arg);
             // считаем сумму = добавляем в нее величину расчета СЛАГАЕМОГО
@@ -151,6 +151,9 @@ public class For27_demo {
             }
 
 
-        out.printf("arcsin(x) = %.8f", sum);
+        //out.printf("arcsin(x) = %.8f", sum);
+        double mathResult = Math.asin(x);
+        out.println("Вычислено нами:" + sum);
+        out.println("Вычислено встроенным модулем" + mathResult);
     }
 }
